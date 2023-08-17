@@ -5,18 +5,18 @@ pipeline {
    stages {
         
         stage('SCM'){
-		stpes{
+		steps{
 			echo "SCM"
 			git 'https://github.com/madhav8890/webserver-with-jenkins.git'
 		}         
         }
         stage('Build'){
-		stpes{
+		steps{
 			echo "Build"
 		}         
         }
         stage('Deploy'){
-		stpes{
+		steps{
 			echo "Deploy"
 		}        
         }
